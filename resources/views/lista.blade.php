@@ -8,11 +8,10 @@
 
 
 </div>
-<div class="container2 container d-flex p-2 table-responsive-sm">
+<div class="container3 container pt-3  pb-3 table-responsive">
 
 
-
-    <table class="table table-dark table-striped ">
+    <table class="table table-dark table-striped  ">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -50,9 +49,11 @@
 
 
 
+      {{$datos->links()}}
 
 
 
 
 </div>
+
 @endsection

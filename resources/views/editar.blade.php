@@ -61,11 +61,11 @@
 </script>
 @endif
 </div>
-<div class="container2 container d-flex p-1 table-responsive-sm">
+<div class="container2 container pt-3 pb-3  table-responsive-sm">
 
 
 
-    <table class="table table-dark table-striped ">
+    <table class="table table-dark table-striped mb-1">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -95,12 +95,14 @@
 
 
         </tbody>
+
       </table>
+
+      {{$datos->links()}}
+</div>
 
 
 
 
 
 @endsection
-
-</div>

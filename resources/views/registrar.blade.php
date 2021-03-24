@@ -13,7 +13,7 @@
     {
         toastr.options = {
         "progressBar": true,
-        "positionClass": "toast-bottom-center",
+        "positionClass": "toast-top-right",
         "preventDuplicates": true,
         "onclick": null,
         "showDuration": "300",
@@ -42,20 +42,154 @@
     @csrf
 
     @error('Nombre')
-    <div class=" alert-danger alerta1"> El nombre es obligatorio</div>
+    <!--     <div class=" alert-danger alerta1"> El nombre es obligatorio</div>    mensaje que aparece en un div  -->
+<!--  Script js que imprime un toast   -->
+    <script>
+        $(document).ready(function()
+        {
+            toastr.options = {
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+            }
+
+            toastr["error"]("Completa el campo vacio", "Nombre Vacio")
+
+
+        }
+        )
+
+    </script>
 
     @enderror
     @error('Descripcion')
-    <div class=" alert-danger alerta1"> La descripcion es obligatoria</div>
+
+<!--    <div class=" alert-danger alerta1"> La descripcion es obligatoria</div>  -->
+<!--  Script js que imprime un toast   -->
+    <script>
+        $(document).ready(function()
+        {
+            toastr.options = {
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+            }
+
+            toastr["error"]("Completa el campo vacio", "Descripcion Vacia")
+
+
+        }
+        )
+
+    </script>
     @enderror
     @error('Año')
-    <div class=" alert-danger alerta1"> El año es obligatorio</div>
+
+    <!--     <div class=" alert-danger alerta1"> El año es obligatorio</div>   -->
+    <!--  Script js que imprime un toast   -->
+    <script>
+        $(document).ready(function()
+        {
+            toastr.options = {
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+            }
+
+            toastr["error"]("Completa el campo vacio", "Año Vacio")
+
+
+        }
+        )
+
+    </script>
     @enderror
     @error('Genero')
-    <div class=" alert-danger alerta1"> El genero es obligatorio</div>
+    <!--  <div class=" alert-danger alerta1"> El genero es obligatorio</div> -->
+    <!--  Script js que imprime un toast   -->
+
+    <script>
+        $(document).ready(function()
+        {
+            toastr.options = {
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+            }
+
+            toastr["error"]("Completa el campo vacio", "Genero Vacio")
+
+
+        }
+        )
+
+    </script>
     @enderror
     @error('Promedio')
-    <div class=" alert-danger alerta1 mb-1"> El promedio es obligatorio</div>
+    <!-- <div class=" alert-danger alerta1 mb-1"> El promedio es obligatorio</div>-->
+    <!--  Script js que imprime un toast   -->
+
+    <script>
+        $(document).ready(function()
+        {
+            toastr.options = {
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+            }
+
+            toastr["error"]("Completa el campo vacio", "Promedio Vacio")
+
+
+        }
+        )
+
+    </script>
     @enderror
 
 

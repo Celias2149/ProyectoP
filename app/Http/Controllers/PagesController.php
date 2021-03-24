@@ -18,8 +18,8 @@ class PagesController extends Controller
 
     public function lista($datos=null)
     {
-
-        $datos =App\Pelicula::all();
+     /* $datos =App\Pelicula::all();          este sirve para mostrar todos los elementos de la base de datos guardados en la variable*/
+     $datos =App\Pelicula::paginate(3);  /* Este sirve para elegir cuantos elementos mostrar */
         return view('lista', compact('datos'));
     }
     public function detalle($id){
@@ -59,7 +59,8 @@ class PagesController extends Controller
     public function editar($datos=null)
     {
 
-        $datos =App\Pelicula::all();
+       /* $datos =App\Pelicula::all();          este sirve para mostrar todos los elementos de la base de datos guardados en la variable*/
+        $datos =App\Pelicula::paginate(3);  /* Este sirve para elegir cuantos elementos mostrar */
         return view('editar', compact('datos'));
     }
 
