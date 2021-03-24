@@ -1,0 +1,19 @@
+.section1{align-items: center; justify-content: center;}
+
+.hinicio{color: rgb(255, 255, 255); text-align: center; background-color: rgb(19, 107, 48);}
+/*body{ background-image: url(https://images.unsplash.com/photo-1473773508845-188df298d2d1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80);
+    background-size: cover;
+
+}*/
+body{ background-color: #17202A };
+
+
+.container2{background-color: rgba(0, 0, 0, 0.808);  margin-top: 10px;  margin: auto; width: auto;}
+
+.divdetalle{background-color: rgba(255, 255, 255, 0.685);  margin-top: 20px;  margin: auto; width: auto;  box-shadow: 5px 10px;}
+.links{color: white;   transition: 0.3s;}
+
+.links:hover{transition:10ms;}
+.divdetalle1{background-color: rgba(255, 255, 255, 0.685);  margin: auto; width: 600px; border-radius: 20px;}
+.alerta{margin: auto; width: 600px;}
+.alerta1{width: 100%;}
