@@ -35,8 +35,8 @@
 </script>
 @endif
 
-<div class="container mb-5 divdetalle1"></div>
-<div class=" card container mb-5 divdetalle1">
+
+<div class="  container mb-5 divdetalle1 card-body">
     <label class="display-3 mb-2 text-center">Agregar Peliculas</label>
 <form action="{{ route('peliculas.crear') }}" method="POST" >
     @csrf

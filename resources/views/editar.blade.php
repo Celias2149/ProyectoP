@@ -61,33 +61,33 @@
 </script>
 @endif
 </div>
-<div class="container2 container pt-3 pb-3  table-responsive-sm">
+<div class=" container pt-3 pb-3  card">
 
+<div class="card-body ">
 
-
-    <table class="table table-dark table-striped mb-1">
+    <table id="listaeditar" class="table table-striped table-bordered dt-responsive nowrap"  style="width:100%">
         <thead>
           <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nombre</th>
-            <th scope="col">Año</th>
-            <th scope="col">Opciones</th>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Año</th>
+            <th>Opciones</th>
           </tr>
         </thead>
         <tbody>
             @foreach ($datos as $item )
 
             <tr>
-                <th scope="row">{{$item->id}}</th>
+                <td class="tdid">{{$item->id}}</th>
                 <td>{{ $item->Nombre }}</td>
                 <td>{{$item->Año}}</td>
 
-                <td>
-                    <a href="{{route('peliculas.modificar', $item)}}" class="btn btn-warning btn-sm">Editar</a>
+                <td class="tdbnts">
+                    <a href="{{route('peliculas.modificar', $item)}}" class="btn btn-warning btn-sm btnupdate">Editar</a>
                     <form action="{{ route('peliculas.eliminar', $item) }}" class="d-inline" method="POST">
                         @method('DELETE')
                         @csrf
-                        <button type="submit" class="btn btn-danger btn-sm">Eliminar</button>
+                        <button type="submit" class="btn btn-danger btn-sm btndelet">Eliminar</button>
                     </form>
               </tr>
 
@@ -98,7 +98,44 @@
 
       </table>
 
-      {{$datos->links()}}
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+      <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+      <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
+      <script src="https://cdn.datatables.net/responsive/2.2.7/js/responsive.bootstrap4.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('#listaeditar').DataTable( {
+        "language": {
+            "lengthMenu": "Mostrar _MENU_ entradas",
+            "zeroRecords": "No se ha encontrado nada",
+            "info": "Mostrar _PAGE_ de _PAGES_",
+            "infoEmpty": "0 paginas para mostrar",
+            "infoFiltered": "(filtered from _MAX_ total records)",
+            "search": "Buscar:",
+            "paginate": {
+        "first": "Primero",
+        "last": "Último",
+        "next": "Siguiente",
+        "previous": "Anterior"
+    },
+    "aria": {
+        "sortAscending": ": Activar para ordenar la columna de manera ascendente",
+        "sortDescending": ": Activar para ordenar la columna de manera descendente"
+    },
+
+
+
+        },
+        "responsive":"true"
+    } );
+} );
+
+
+
+</script>
+</div>
 </div>
 
 

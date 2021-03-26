@@ -17,3 +17,6 @@ body{ background-image: url(https://images.unsplash.com/photo-1473773508845-188d
 .divdetalle1{background-color: rgba(255, 255, 255, 0.685);  margin: auto; width: 600px; border-radius: 20px;}
 .alerta{margin: auto; width: 600px;}
 .alerta1{width: 100%;}
+.btnupdate{width:100px ;}
+.btndelet{width: 100px;}
+.tdid{width: 60px;}
